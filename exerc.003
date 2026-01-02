@@ -1,0 +1,17 @@
+algoritmo "exerc.003"
+// Função : Ler nome e salário
+// Autor : Nathan Elias Cabral
+// Data : 02/01/2026
+var
+   nom: caractere
+   sal: real
+inicio
+      escreva("DIGITE O NOME DO FUNCIONÁRIO: ")
+      leia(nom)
+      escreva("INSIRA O SALÁRIO MENSAL DE ",nom,": R$")
+      leia(sal)
+      escreval("--------STATUS--------")
+      escreval("FUNCIONÁRIO: ",nom)
+      escreval("SALÁRIO: R$",sal)
+      escreva("-----------------------")
+fimalgoritmo
