@@ -1,0 +1,12 @@
+algoritmo "ex10"
+// Função : Converter de R$ para U$
+// Autor : Nathan Cabral
+// Data : 02/01/2026
+var
+   r,d: real
+inicio
+      escreva("DIGITE A QUANTIA  EM REAIS: R$")
+      leia(r)
+      d<-r/5.5
+      escreva("COM R$",r," VOCE PODE COMPRAR U$",d:5:2)
+fimalgoritmo
