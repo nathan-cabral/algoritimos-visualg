@@ -1,0 +1,22 @@
+algoritmo "ex8"
+// Função : Ler número e mostrar dobro e terça parte
+// Autor :  Nathan Cabral
+// Data : 02/01/2026
+var
+   n,d,t,esc: real
+inicio
+      escreva("INSIRA UM VALOR QUALQUER: ")
+      leia(n)
+      d<-n*2
+      t<-n/3
+      escreval("ESCOLHA O QUE DESEJA SABER: ")
+      escreval("[1] MOSTRAR O DOBRO DE ",n)
+      escreval("[2] MOSTRAR A TERÇA PARTE DE ",n)
+      leia(esc)
+      escolha esc
+              caso 1
+                   escreva("O DOBRO DE ",n," É ",d)
+              caso 2
+                   escreva("A TERÇA PARTE DE ",n," É ",t)
+      fimescolha
+fimalgoritmo
