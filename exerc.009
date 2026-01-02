@@ -1,0 +1,43 @@
+algoritmo "ex9"
+// Função : Criar tabela de conversão de unidades(m)
+// Autor :  Nathan Elias Cabral
+// Data : 02/01/2026
+var
+   v,resp: real
+   esc: inteiro
+inicio
+      escreval("---------------TABELA----------------")
+      escreva("Insira aqui um valor (em metros): ")
+      leia(v)
+      escreval("ESCOLHA A UNIDADE DESEJADA PARA CONVERSÃO: ")
+      escreval("[1] para KM")
+      escreval("[2] para HM")
+      escreval("[3] para DAM")
+      escreval("[4] para DM")
+      escreval("[5] para CM")
+      escreval("[6] para MM")
+      escreval("----------------------------------")
+      leia(esc)
+      escolha esc
+              caso 1
+                   resp<-v/1000
+                   escreval(v," METROS==>> ",resp," KM")
+              caso 2
+                   resp<-v/100
+                   escreval(v," METROS==>> ",resp," HM")
+              caso 3
+                   resp<-v/10
+                   escreval(v," METROS==>> ",resp," DAM")
+              caso 4
+                   resp<-v*10
+                   escreval(v," METROS==>> ",resp," DM")
+              caso 5
+                   resp<-v*100
+                   escreval(v," METROS==>> ",resp," CM")
+              caso 6
+                   resp<-v*1000
+                   escreval(v," METROS==>> ",resp," MM")
+              
+      fimescolha
+      escreva("----------------------------------")
+fimalgoritmo
