@@ -1,0 +1,14 @@
+algoritmo "ex4"
+// Função : Somar 2 números inteiros
+// Autor : Nathan Elias Cabral
+// Data : 02/01/2026
+var
+   n1,n2,s: inteiro
+inicio
+      escreva("INSIRA O PRIMEIRO NÚMERO: ")
+      leia(n1)
+      escreva("INSIRA O SEGUNDO NÚMERO: ")
+      leia(n2)
+      s<-n1+n2
+      escreva(n1,"+",n2,"=",s)
+fimalgoritmo
