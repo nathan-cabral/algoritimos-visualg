@@ -1,0 +1,19 @@
+algoritmo "ex11"
+// Função : Calcular área de uma parede e mostrar a quantidade de L de tinta
+// Autor : Nathan Cabral
+// Data : 02/01/2026
+var
+   h,l,t,a: real
+inicio
+      escreval("Insira aqui as seguintes medidas da parede: ")
+      escreva("ALTURA (M): ")
+      leia(h)
+      escreva("LARGURA (M): ")
+      leia(l)
+      a<-h*l
+      t<-a/2
+      escreval("------------------SITUAÇÃO------------------")
+      escreval("ÁREA DA PAREDE: ",a," Metros Quadrados")
+      escreval("QUANTIDADE DE TINTA NECESSÁRIA: ",t," Litros")
+      escreva("---------------------------------------------")
+fimalgoritmo
