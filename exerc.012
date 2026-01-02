@@ -1,0 +1,36 @@
+algoritmo "ex12"
+// Função : Calculadora de fun.1º e 2º grau
+// Autor :  Nathan Cabral
+// Data : 02/01/2026
+var
+   a,b,c,x,y: real
+   esc: inteiro
+inicio
+      escreval("~~~~~~~CALCULADORA DE FUNÇÕES~~~~~~~")
+      escreval("DIGITE")
+      escreval("[1] PARA FUNÇÃO DO 1º GRAU")
+      escreval("[2] PARA FUNÇÃO DO 2º GRAU: ")
+      leia(esc)
+      escolha esc
+              caso 1
+              escreva("Insira o valor de A: ")
+              leia(a)
+              escreva("Insira o valor de B: ")
+              leia(b)
+              escreva("Escolha o valor de X: ")
+              leia(x)
+              y<- a*x+b
+              escreva("RESULTADO: ",y)
+              caso 2
+                   escreva("Insira o valor de A: ")
+                   leia(a)
+                   escreva("Insira o valor de B: ")
+                   leia(b)
+                   escreva("Insira o valor de C: ")
+                   leia(c)
+                   escreva("Escolha o valor de X: ")
+                   leia(x)
+                   y<- a*x^2+b*x+c
+                   escreva("RESULTADO: ",y)
+      fimescolha
+fimalgoritmo
