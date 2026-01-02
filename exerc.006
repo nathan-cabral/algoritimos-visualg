@@ -1,0 +1,77 @@
+algoritmo "ex06"
+// Função : Media entre 4 notas e analise de desempenho
+// Autor : Nathan Cabral
+// Data : 02/01/2026
+var
+   p1,p2,p3,p4,mf: real
+   dis: inteiro
+   n: caractere
+inicio
+      escreval("~~~~~~~~~~~~~~~~~")
+      escreval("ESCOLA DE EXATAS")
+      escreval("~~~~~~~~~~~~~~~~~")
+      escreva("INSIRA AQUI O NOME DO ALUNO: ")
+      leia(n)
+      escrevaL("Olá ",n,"!")
+      escreval("ESCOLHA A DISCIPLINA: ")
+      escreval("[1] MATEMÁTICA OU [2] GEOGRAFIA: ")
+      leia(dis)
+      escolha dis
+              Caso 1
+                   escreval("INSIRA AS NOTAS REFERENTES A MATEMÁTICA: ")
+                   escreva("PROVA 1: ")
+                   leia(p1)
+                   escreva("PROVA 2: ")
+                   leia(p2)
+                   escreva("PROVA 3: ")
+                   leia(p3)
+                   escreva("PROVA 4: ")
+                   leia(p4)
+                   mf<-(p1+p2+p3+p4)/4
+                   se (mf>=8) entao
+                      escreval("--------STATUS--------")
+                      escreval("ALUNO: ",n)
+                      escreval("DISCIPLINA: MATEMÁTICA")
+                      escreval("MEDIA FINAL: ",mf:2:2)
+                      escreval("SITUACAO: APROVADO")
+                      escreva("----------------------")
+                   senao
+                        se (mf<8) entao
+                           escreval("--------STATUS--------")
+                           escreval("ALUNO: ",n)
+                           escreval("DISCIPLINA: MATEMÁTICA")
+                           escreval("MEDIA FINAL: ",mf:2:2)
+                           escreval("SITUACAO: REPROVADO")
+                           escreva("------------------------")
+                        fimse
+                   fimse
+              caso 2
+                   escreval("INSIRA AS NOTAS REFERENTES A GEOGRAFIA: ")
+                   escreva("PROVA 1: ")
+                   leia(p1)
+                   escreva("PROVA 2: ")
+                   leia(p2)
+                   escreva("PROVA 3: ")
+                   leia(p3)
+                   escreva("PROVA 4: ")
+                   leia(p4)
+                   mf<-(p1+p2+p3+p4)/4
+                   se(mf>=6) entao
+                             escreval("--------STATUS--------")
+                             escreval("ALUNO: ",n)
+                             escreval("DISCIPLINA: GEOGRAFIA")
+                             escreval("MEDIA FINAL: ",mf:2:2)
+                             escreval("SITUACAO: APROVADO")
+                             escreva("------------------------")
+                   senao
+                        se(mf<6) entao
+                                 escreval("--------STATUS--------")
+                                 escreval("ALUNO: ",n)
+                                 escreval("DISCIPLINA: GEOGRAFIA")
+                                 escreval("MEDIA FINAL: ",mf:2:2)
+                                 escreval("SITUACAO: REPROVADO")
+                                 escreva("------------------------")
+                        fimse
+                   fimse
+      fimescolha
+fimalgoritmo
