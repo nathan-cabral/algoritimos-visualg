@@ -1,0 +1,11 @@
+algoritmo "exerc.002"
+// Função : Ler nome
+// Autor : Nathan Elias Cabral
+// Data : 02/01/2026
+var
+   nome: caractere
+inicio
+      escreva("DIGITE O SEU NOME: ")
+      leia(nome)
+      escreva("Olá, ",nome,"!")
+fimalgoritmo
