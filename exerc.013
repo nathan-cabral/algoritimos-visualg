@@ -1,0 +1,21 @@
+algoritmo "ex13"
+// Função : Calcular valor final de uma corrida de taxi
+// Autor : Nathan Elias Cabral
+// Data : 02/01/2026
+var
+   a,b,dis: inteiro
+   y: real
+inicio
+      a<-3
+      b<-5
+      escreval("-------------")
+      escreval("  TAXIMETRO ")
+      escreval("-------------")
+      escreval("BANDEIRADA->R$5.00")
+      escreval("PREÇO POR KM RODADO->R$3.00")
+      escreva("DISTANCIA PERCORRIDA (KM): ")
+      leia(dis)
+      y<-a*dis+b
+      escreval("-----------------------------")
+      escreva("PREÇO A PAGAR= R$",y)
+fimalgoritmo
