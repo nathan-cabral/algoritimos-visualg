@@ -3,7 +3,7 @@ algoritmo "ex12"
 // Autor :  Nathan Cabral
 // Data : 02/01/2026
 var
-   a,b,c,x,y: real
+   a,b,c,x,y,d: real
    esc: inteiro
 inicio
       escreval("~~~~~~~CALCULADORA DE FUNÇÕES~~~~~~~")
@@ -31,6 +31,8 @@ inicio
                    escreva("Escolha o valor de X: ")
                    leia(x)
                    y<- a*x^2+b*x+c
-                   escreva("RESULTADO: ",y)
+                   escreval("Y= ",y)
+                   d<-b^2-4*a*c
+                   escreva("VALOR DE DELTA= ",d)
       fimescolha
 fimalgoritmo
