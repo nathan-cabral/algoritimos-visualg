@@ -1,0 +1,24 @@
+algoritmo "ex04"
+// Função : Fazer média entre 2 notas
+// Autor : Nathan Cabral
+// Data : 02/01/2026
+var
+   al:caractere
+   n1,n2,mf: real
+inicio
+      escreval("-----------------")
+      escreval("ESCOLA F(X)=AX+B")
+      escreval("------------------")
+      escreva("Digite o nome do aluno: ")
+      leia(al)
+      escreval("Insira as notas de ",al)
+      escreva("Prova 1: ")
+      leia(n1)
+      escreva("Prova 2: ")
+      leia(n2)
+      mf<-(n1+n2)/2
+      escreval("------STATUS------")
+      escreval("ALUNO: ",al)
+      escreval("MÉDIA FINAL: ",mf:2:2)
+      escreva("-------------------")
+fimalgoritmo
