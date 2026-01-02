@@ -1,0 +1,14 @@
+algoritmo "ex14"
+// Função : Calcular desconto de 5%
+// Autor : Nathan Cabral
+// Data : 02/01/2026
+var
+   v,vd: real
+inicio
+      escreval("TODOS OS PRODUTOS ESTÃO COM 5% DE DESCONTO !")
+      escreval("----------------------------------------------")
+      escreva("INSIRA O VALOR DO PRODUTO ESCOLHIDO: R$")
+      leia(v)
+      vd<-v*0.95
+      escreva("VALOR FINAL COM DESCONTO APLICADO: R$",vd)
+fimalgoritmo
