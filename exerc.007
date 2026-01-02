@@ -1,0 +1,22 @@
+algoritmo "ex7"
+// Função : Ler numero e mostrar antecessor e sucessor
+// Autor : Nathan Elias Cabral
+// Data : 02/01/2026
+var
+   n,a,s,esc: inteiro
+inicio
+      escreva("INSIRA UM NÚMERO QUALQUER: ")
+      leia(n)
+      a<-n-1
+      s<-n+1
+      escreval("ESCOLHA: ")
+      escreval("[1] para ANTECESSOR")
+      escreval("[2] para SUCESSOR: ")
+      leia(esc)
+      escolha esc
+              Caso 1
+                   escreva("O ANTECESSOR DO NÚMERO ",n," É IGUAL A: ",a)
+              Caso 2
+                   escreva("O SUCESSOR DO NÚMERO ",n," É IGUAL A: ",s)
+      fimescolha
+fimalgoritmo
