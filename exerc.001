@@ -1,0 +1,8 @@
+algoritmo "exer1"
+// Função : Mostrar a mensagem "Olá, mundo!"
+// Autor : Nathan Elias Cabral
+// Data : 01/01/2026
+var
+inicio
+      escreva("Olá, mundo!")
+fimalgoritmo
