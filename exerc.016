@@ -1,0 +1,36 @@
+algoritmo "ex16"
+// Função : Ler dias e km para calcular preco aluguel
+// Autor : Nathan Cabral
+// Data : 03/01/2026
+var
+   dia,km,modelo,fix,tlux: inteiro
+   y,pkm: real
+inicio
+      escreval("LOCADORA DE CARROS")
+      escreval("------------------")
+      escreval("Insira abaixo os respectivos valores")
+      escreva("Dias usados: ")
+      leia(dia)
+      escreva("KM rodado: ")
+      leia(km)
+      escreval("----------------------------------")
+      escreval("Qual modelo de carro foi escolhido")
+      escreval("[1] LUXO               [2] POPULAR")
+      leia(modelo)
+      escreval("----------------------------------")
+      escolha modelo
+              Caso 1
+                   fix<-120
+                   pkm<-2
+                   tlux<-10
+                   y<-fix*dia+pkm*km+tlux
+              Caso 2
+                   fix<-90
+                   pkm<-1
+                   y<-fix*dia+pkm*km
+      fimescolha
+      escreval("RESUMO:")
+      escreval("DIAS: ",dia)
+      escreval("KM: ",km)
+      escreval("MODELO: ",modelo)
+      escreval("VALOR FINAL: R$",y)
