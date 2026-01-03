@@ -1,0 +1,15 @@
+algoritmo "ex18"
+// Função : Calcular tempo de vida perdido por um fumante
+// Autor : Nathan Cabral
+// Data : 03/01/2026
+var
+   cig,ano,x,y: real
+inicio
+      escreva("Quantos cigarros voce fuma por dia? ")
+      leia(cig)
+      escreva("Por quantos anos voce fuma? ")
+      leia(ano)
+      x<-10*365*ano*cig
+      y<-x/(60*24)
+      escreva("V0CE PERDEU ",y:1:0," DIAS DA SUA VIDA")
+fimalgoritmo
