@@ -1,0 +1,19 @@
+algoritmo "ex15"
+// Função : Aumentar salario em 15%
+// Autor : Nathan Cabral
+// Data : 03/01/202
+var
+   n: caractere
+   sal,nsal: real
+inicio
+      escreva("NOME DO FUNCIONARIO: ")
+      leia(n)
+      escreva("SALARIO ATUAL: R$")
+      leia(sal)
+      nsal<-sal*1.15
+      escreval("calculando reajuste de 15%... AGUARDE")
+      escreval("~~~~~~~~~STATUS~~~~~~~~~")
+      escreval("NOME: ",n)
+      escreval("SALARIO ATUAL: R$",sal)
+      escreva("NOVO SALARIO: R$",nsal)
+fimalgoritmo
