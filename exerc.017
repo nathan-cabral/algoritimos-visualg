@@ -1,0 +1,16 @@
+algoritmo "ex17"
+// Função : Calcular salario por dias trabalhados
+// Autor : Nathan Cabral
+// Data : 03/01/2026
+var
+   d: inteiro
+   s: real
+inicio
+      escreva("Quantos dias o funcionario trabalhou nesse mes? ")
+      leia(d)
+      escreval("Sabendo que:")
+      escreval("Por dia o funcionario trabalha durante 8 horas")
+      escreval("Por hora ele recebe R$25")
+      s<-d*8*25
+      escreval("Logo, o salario mensal desse funcionario e de: R$",s)
+fimalgoritmo
