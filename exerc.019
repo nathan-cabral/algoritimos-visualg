@@ -1,0 +1,23 @@
+algoritmo "ex19"
+// Função : Calcular multa caso ultrapasse 80km/h
+// Autor : Nathan Cabral
+// Data : 05/01/2026
+var
+   vel,mult:real
+inicio
+      escreva("VELOCIDADE DO VEICULO (KM/H): ")
+      leia(vel)
+      escreval("-------------------------------------------")
+      se (vel>80) entao
+         escreval("VOCE ULTRAPASSOU OS LIMITES DA VIA")
+         escreval("LIMITE: 80km/h     SEU CARRO: ",vel,"km/h")
+         mult<-(vel-80)*5
+         escreval("VOCE SERA MULTADO POR ALTA VELOCIDADE")
+         escreval("VALOR DA MULTA: R$",mult)
+      senao
+           escreval("O CARRO ESTA NO LIMITE")
+           escreval("LIMITE: 80km/h    SEU CARRO: ",vel,"km/h")
+           escreval("PARABENS POR CUMPRIR COM A SUA OBRIGACAO")
+      fimse
+      escreval("-------------------------------------------")
+fimalgoritmo
