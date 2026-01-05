@@ -1,0 +1,35 @@
+algoritmo "ex23"
+// Função : Calcular idade para alistamento
+// Autor : Nathan Cabral
+// Data : 05/01/2026
+var
+   ano,ida,x: inteiro
+   nom: caractere
+inicio
+      escreval("-------------------")
+      escreval("ALISTAMENTO MILITAR")
+      escreval("-------------------")
+      escreva("Nome: ")
+      leia(nom)
+      escreva("Ano de nascimento: ")
+      leia(ano)
+      ida<-2026-ano
+      escreval("SITUACAO: ")
+      escreval("Nome: ",nom)
+      escreval("Idade: ",ida)
+      se (ida=18)entao
+         escreva("Voce esta no tempo ideal para o alistamento!")
+      senao
+           se(ida>18)entao
+             x<- ida-18
+             escreval("Ja se passaram ",x," anos do alistamento!")
+             escreval("--------------------AVISO------------------------")
+             escreva("Providencie os documentos o mais rapido possivel!!")
+           senao
+                se (ida<18) entao
+                   x<- 18-ida
+                   escreva("Faltam ",x," anos para o alistamento!")
+                fimse
+           fimse
+      fimse
+fimalgoritmo
