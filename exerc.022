@@ -1,0 +1,15 @@
+algoritmo "ex22"
+// Função : Detectar ano bissexto
+// Autor : Nathan Cabral
+// Data : 05/01/2026
+var
+   a: inteiro
+inicio
+      escreva("Insira o ano (xxxx): ")
+      leia(a)
+      se(a%4=0) entao
+                escreva(a," e um ano bissexto")
+      senao
+           escreva(a," nao e um ano bissexto")
+      fimse
+fimalgoritmo
