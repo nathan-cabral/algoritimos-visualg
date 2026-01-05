@@ -1,0 +1,17 @@
+algoritmo "ex25"
+// Função : Calcular passagem de onibus
+// Autor : Nathan Cabral
+// Data : 05/01/2026
+var
+   dis,pr: real
+inicio
+      escreva("DISTANCIA PERCORRIDA (KM): ")
+      leia(dis)
+      se(dis>200) entao
+                  pr<- dis*0.5
+                  escreva("PRECO FINAL: R$",pr)
+      senao
+           pr<- dis*0.45
+           escreva("PRECO FINAL: R$",pr)
+      fimse
+fimalgoritmo
