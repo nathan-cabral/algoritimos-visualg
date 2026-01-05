@@ -1,0 +1,15 @@
+algoritmo "ex21"
+// Função : Ler numero e mostrar se e par ou impar
+// Autor : Nathan Cabral
+// Data : 05/01/2026
+var
+   n: inteiro
+inicio
+      escreva("Digite um numero: ")
+      leia(n)
+      se(n%2=0)entao
+                  escreva(n,": PAR")
+      senao
+           escreva(n,": IMPAR")
+      fimse
+fimalgoritmo
