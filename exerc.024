@@ -1,0 +1,32 @@
+algoritmo "ex24"
+// Função : Calcular desconto de acordo com o genero
+// Autor : Nathan Cabral
+// Data : 05/01/2026
+var
+   gen: inteiro
+   v,d: real
+   cup: caractere
+inicio
+      escreval("Digite o seu genero: ")
+      escreva("[1] MASCULINO   OU   [2] FEMININO : ")
+      leia(gen)
+      escreval("Voce ganhou um cupom!")
+      escolha gen
+             caso 1
+                  escreval("Use o cupom 'HOMEMOFF' para obter 5% de desconto")
+             caso 2
+                  escreval("Use o cupom 'MULHEROFF' para obter 13% de desconto")
+      fimescolha
+      escreva("Valor final da compra: R$")
+      leia(v)
+      escreva("INSIRA O CUPOM :")
+      leia(cup)
+      se(cup="HOMEMOFF") entao
+            d<- v*0.95
+      senao
+           se(cup="MULHEROFF") entao
+                 d<- v*0.87
+           fimse
+      fimse
+      escreva("Valor final com desconto aplicado: R$",d)
+fimalgoritmo
