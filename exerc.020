@@ -1,0 +1,19 @@
+algoritmo "ex20"
+// Função : Calcular se a pessoa ja pode votar
+// Autor : Nathan Cabral
+// Data : 05/01/2026
+var
+   atu,nas,ida: inteiro
+inicio
+      escreva("Insira em que ano estamos: ")
+      leia(atu)
+      escreva("Agora digite o ano do seu nascimento: ")
+      leia(nas)
+      ida<-atu-nas
+      se (ida>=18) entao
+         escreval("Voce pode votar")
+      senao
+           escreval("Voce nao pode votar")
+      fimse
+      escreva("Idade minima: 18 anos      Sua idade: ",ida," anos")
+fimalgoritmo
