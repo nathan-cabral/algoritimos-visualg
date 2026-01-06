@@ -1,0 +1,23 @@
+algoritmo "ex27"
+// Função : Ler 2 numeros e comparar maior e menor
+// Autor : Nathan Cabral
+// Data : 06/01/2026
+var
+   n1,n2: inteiro
+inicio
+      escreva("Insira o primeiro numero: ")
+      leia(n1)
+      escreva("Insira o segundo numero: ")
+      leia(n2)
+      se(n1=n2) entao
+                escreva("Nao existe valor maior, os dois sao iguais")
+      senao
+           se (n1>n2) entao
+              escreva("O primeiro valor e o maior")
+           senao
+                se(n2>n1) entao
+                          escreva("O segundo valor e o maior")
+                fimse
+           fimse
+      fimse
+fimalgoritmo
