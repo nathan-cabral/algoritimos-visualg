@@ -1,0 +1,26 @@
+algoritmo "ex29"
+// Função : Analisar status de um terreno
+// Autor : Nathan Cabral
+// Data : 06/01/2026
+var
+   l,c,a: real
+inicio
+      escreval("DIGITE AS SEGUINTES ESPECIFICACOES DO TERRENO")
+      escreva("Comprimento (metro): ")
+      leia(c)
+      escreva("Largura (metro): ")
+      leia(l)
+      a<-l*c
+      escreval("AREA: ",a," METROS QUADRADOS")
+      se(a<100) entao
+                escreva("Classificacao: TERRENO POPULAR")
+      senao
+           se(a>=100) e (a<500) entao
+                      escreva("Classificacao: TERRENO MASTER")
+           senao
+                se(a>=500) entao
+                           escreva("Classificacao: TERRENO VIP")
+                fimse
+           fimse
+      fimse
+fimalgoritmo
