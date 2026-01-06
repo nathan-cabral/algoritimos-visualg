@@ -1,0 +1,20 @@
+algoritmo "ex26"
+// Função : Ansalisar se e possivel formar um triangulo
+// Autor : Nathan Cabral
+// Data : 06/01/2026
+var
+   a,b,c: real
+inicio
+      escreval("Insira valores para os seguintes seguimentos de retas:")
+      escreva("A: ")
+      leia(a)
+      escreva("B :")
+      leia(b)
+      escreva("C: ")
+      leia(c)
+      se (a<b+c) e (b<c+a) e (c<a+b) entao
+         escreva("Os seguimentos PODEM formar um triangulo !")
+      senao
+           escreva("Os seguimentos NAO PODEM formar um triangulo !")
+      fimse
+fimalgoritmo
