@@ -1,0 +1,35 @@
+algoritmo "ex28"
+// Função : Analisar media de aluno
+// Autor : Nathan Cabral
+// Data : 06/01/2026
+var
+   p1,p2,p3,p4,mf: real
+   nom: caractere
+inicio
+      escreva("Digite o seu nome: ")
+      leia(nom)
+      escreval("Insira as notas das respectivas provas ")
+      escreva("PROVA 1: ")
+      leia(p1)
+      escreva("PROVA 2: ")
+      leia(p2)
+      escreva("PROVA 3: ")
+      leia(p3)
+      escreva("PROVA 4: ")
+      leia(p4)
+      mf<-(p1+p2+p3+p4)/4
+      escreval("---RESUMO---")
+      escreval("NOME: ",nom)
+      escreval("MEDIA FINAL: ",mf)
+      se (mf>=7) entao
+         escreva("SITUACAO: APROVADO")
+      senao
+           se (mf<7) e (mf>=5) entao
+              escreva("SITUACAO: RECUPERACAO")
+           senao
+                se(mf<5) entao
+                         escreva("SITUACAO: REPROVADO")
+                fimse
+           fimse
+      fimse
+fimalgoritmo
