@@ -1,0 +1,31 @@
+algoritmo "ex30"
+// Função : Ler nome, salario e dar aumento de acordo com o tempo de empresa
+// Autor : Nathan Cabral
+// Data : 07/01/2026
+var
+   n: caractere
+   s,ns: real
+   t: inteiro
+inicio
+      escreva("Digite o nome do funcionario: ")
+      leia(n)
+      escreva("Quantos anos o funcionario trabalha na empresa: ")
+      leia(t)
+      escreva("Digite o salario: R$")
+      leia(s)
+      se(t<=3) entao
+               ns<- s*1.03
+      senao
+           se(t>3) e (t<=10) entao
+                   ns<- s*1.20
+           senao
+                se(t>10) entao
+                         ns<- s*1.5
+                fimse
+           fimse
+      fimse
+      escrevaL("~~~~RESUMO~~~~~~")
+      escreval("NOME: ",n)
+      escreval("ANTIGO SALARIO: R$",s)
+      escreva("NOVO SALARIO: R$",ns)
+fimalgoritmo
