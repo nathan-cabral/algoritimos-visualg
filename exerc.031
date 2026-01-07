@@ -1,0 +1,31 @@
+algoritmo "ex31"
+// Função : Analisar se e possivel formar um triangulo e classificar
+// Autor : Nathan Cabral
+// Data : 07/01/2026
+var
+   a,b,c: real
+inicio
+      escreval("INSIRA VALORES PARA OS RESPECTIVOS SEGUIMENTOS DE RETA:")
+      escreva("A: ")
+      leia(a)
+      escreva("B: ")
+      leia(b)
+      escreva("C: ")
+      leia(c)
+      se (c<b+a) e (b<a+c) e (a<c+b) entao
+         escreval("Os seguimentos ",a,",",b,",",c," PODEM formar um triangulo")
+         se(a=b) e (b=c) entao
+                   escreva("CLASSIFICACAO: EQUILATERO")
+         senao
+              se(a<>b) e (a<>c) e (b<>c) entao
+                       escreva("CLASSIFICACAO: ESCALENO")
+              senao
+                   se (a<>c) e (a=b) ou (b<>a) e (b=c) entao
+                      escreva("CLASSIFICACAO: ISOSCELES")
+                   fimse
+              fimse
+         fimse
+      senao
+           escreva("Os seguimentos ",a,",",b,",",c," NAO PODEM formar um triangulo")
+      fimse
+fimalgoritmo
