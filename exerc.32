@@ -1,0 +1,30 @@
+algoritmo "ex32"
+// Função : Renovacao de CNH de acordo com a idade
+// Autor : Nathan Cabral
+// Data : 09/01/2026
+var
+   n: caractere
+   i,renov: inteiro
+inicio
+      escreval("------RENOVACAOO DE CNH-------")
+      escreva("INSIRA O SEU NOME: ")
+      leia(n)
+      escreva("DIGITE A SUA IDADE: ")
+      leia(i)
+      se(i<=40) entao
+                renov<-10
+      senao
+           se(i>40) e (i<=65) entao
+                    renov<-5
+           senao
+                se(i>65) entao
+                         renov<-3
+                fimse
+           fimse
+      fimse
+      escreval("--------------------STATUS--------------------")
+      escreval("NOME: ",n)
+      escreval("IDADE: ",i)
+      escreval("PERIODO PARA RENOVACAO DE CNH: ",renov," ANOS")
+      escreva("----------------------------------------------")
+fimalgoritmo
