@@ -1,0 +1,138 @@
+algoritmo "ex33"
+// Função : Calcular algumas coisas
+// Autor : Nathan Cabral
+// Data : 11/01/2026
+var
+   r,con,n,b,c,x,t: inteiro
+   v,d,tt,s,y,a: real
+   r2: caractere
+inicio
+      repita
+         escreval("")
+         escreval("====================")
+         escreval("|     ESCOLHA      |")
+         escreval("====================")
+         escreval("| [1] de 1 ate 10  |")
+         escreval("| [2] Somar x nume.|")
+         escreval("| [3] Tabuada de x |")
+         escreval("| [4] Func. 1 GRAU |")
+         escreval("| [5] Func. 2 GRAU |")
+         escreval("| [6] 10% de desc. |")
+         escreval("| [7] 20% de desc. |")
+         escreval("| [8] 5% de desc.  |")
+         escreval("| [9] Area retan.  |")
+         escreval("| [10] Area trian. |")
+         escreval("| [11] Area Circ.  |")
+         escreval("| [12] Finalizar   |")
+         escreval("====================")
+         leia(r)
+                escolha r
+                        caso 1
+                             con<-1
+                             repita
+                                   escreva(con,".. .")
+                                   con<- con+1
+                             ate con>10
+                        caso 2
+                             s<-0
+                             repita
+                                   escreva("DIGITE O VALOR: ")
+                                   leia(v)
+                                   s<-s+v
+                                   escreva("Deseja continuar [s/n]: ")
+                                   leia(r2)
+                             ate r2="n"
+                             escreva("RESULTADO FINAL: ",s)
+                        caso 3
+                             con<-1
+                             escreval("----TABUADA----")
+                             escreva("DIGITE O NUMERO: ")
+                             leia(n)
+                             repita
+                                   s<-n*con
+                                   escreval(n," x ",con,"= ",s)
+                                   con<-con+1
+                             ate con>10
+                        caso 4
+                             escrevaL("INSIRA VALOR PARA AS INCOGNITAS: ")
+                             escreva("A: ")
+                             leia(a)
+                             escreva("B: ")
+                             leia(b)
+                             escreva("X: ")
+                             leia(x)
+                             y<-a*x+b
+                             escreval("Funcao: y=",a,"x",x,"+",b)
+                             escreva("VALOR DE Y: ",y)
+                        caso 5
+                             escrevaL("INSIRA VALOR PARA AS INCOGNITAS: ")
+                             escreva("A: ")
+                             leia(a)
+                             escreva("B: ")
+                             leia(b)
+                             escreva("C: ")
+                             leia(c)
+                             escreva("X: ")
+                             leia(x)
+                             y<- a*x^2+b*x+c
+                             escreval("Funcao: y=",a," x ",x,"^2 + ",b," x ",x," + ",c)
+                             escreva("VALOR DE Y: ",y)
+                        caso 6
+                             escreva("INSIRA UM VALOR: ")
+                             leia(n)
+                             d<- n*0.90
+                             escreva("RESULTADO: ",d)
+                        caso 7
+                             escreva("INSIRA UM VALOR: ")
+                             leia(n)
+                             d<-n*0.80
+                             escreva("RESULTADO: ",d)
+                        caso 8
+                             escreva("INSIRA UM VALOR: ")
+                             leia(n)
+                             d<-n*0.95
+                             escreva("RESULTADO: ",d)
+                        caso 9
+                             escreval("AREA DE UM RETANGULO")
+                             escreval("INSIRA VALORES PARA AS INCOGNIOTAS")
+                             escreva("BASE (m): ")
+                             leia(b)
+                             escreva("ALTURA (m): ")
+                             leia(c)
+                             a<-b*c
+                             escreva("AREA TOTAL EM METROS QUADRADOS: ",a)
+                        caso 10
+                             escreval("AREA TRIANGULO")
+                             escreval("--------------")
+                             escreval("Escolha o tipo: ")
+                             escreval("[1] Equilatero")
+                             escreval("[2] Retangulo")
+                             leia(t)
+                                    escolha t
+                                            caso 1
+                                                 escreva("INSIRA O VALOR DO LADO: ")
+                                                 leia(a)
+                                                 tt<- (a^2)*1.7/4
+                                                 escreva("AREA: ",tt)
+                                            caso 2
+                                                  escreva("INSIRA O VALOR DA BASE: ")
+                                                  leia(a)
+                                                  escreva("INSIRA O VALOR DA ALTURA: ")
+                                                  leia(b)
+                                                  tt<-(a*b)/2
+                                                  escreva("AREA: ",tt)
+                                    fimescolha
+                        caso 11
+                             escreval("AREA CIRCUNFERENCIA")
+                             escreval("-------------------")
+                             escreval("Valor de pi= 3,14")
+                             escreva("Digite o valor do RAIO: ")
+                             leia(b)
+                             a<-3.14*b
+                             escreva("AREA: ",a)
+                        caso 12
+                             escreval("FINALIZANDO PROGRAMA...")
+                             escreva("Obrigado!")
+                fimescolha
+      ate r=12
+fimalgoritmo
