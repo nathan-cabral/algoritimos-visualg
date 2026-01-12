@@ -1,0 +1,36 @@
+algoritmo "ex34"
+// Função : Analisar os valores
+// Autor : Nathan Cabral
+// Data : 12/01/2026
+var
+   c,s,d5,sp,nu,n: inteiro
+   med: real
+inicio
+      c<-1
+      s<-0
+      d5<-0
+      nu<-0
+      sp<-0
+      repita
+            escreva("Digite o ",c,"o. valor: ")
+            leia(n)
+            se n=0 entao
+               nu<-nu+1
+            senao
+                 se n%5=0 entao
+                    d5<-d5+1
+                 fimse
+            fimse
+            se n%2=0 entao
+               sp<-sp+n
+            fimse
+            s<-s+n
+            c<-c+1
+      ate c>5
+      med<-s/5
+      escreval("A soma entre os valores e : ",s)
+      escreval("A media entre os valores e: ",med)
+      escreval("Valores divisiveis por 5: ",d5)
+      escreval("Numeros nulos: ",nu)
+      escreval("Soma dos valores pares: ",sp)
+fimalgoritmo
