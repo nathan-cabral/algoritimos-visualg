@@ -1,0 +1,246 @@
+algoritmo "ex35"
+// Função : Calcular novo salario
+// Autor : Nathan Cabral
+// Data : 15/01/2026
+var
+   n,r,rf: caractere
+   i,ac,c,p1,p2,p3,porc,dh,h,d: inteiro
+   s,ns,vt: real
+inicio
+      repita
+      escreval("----------------------------------------------")
+      escreval("Insira as seguintes infomacoes do funcionario:")
+      escreval("----------------------------------------------")
+      escreva("Nome: ")
+      leia(n)
+      escreva("Ano de Nascimento: ")
+      leia(i)
+      escreva("Tempo de Contribuicao: ")
+      leia(ac)
+      limpatela
+      escreval("==================")
+      escreval("Escolha o cargo : ")
+      escreval("| [1] VENDEDOR   |")
+      escreval("| [2] ESTOQUISTA |")
+      escreval("| [3] FABRICA    |")
+      escreval("==================")
+      leia(c)
+      limpatela
+      escreva("Insira o salario atual: R$")
+      leia(s)
+      escreval("=========================")
+      escolha c
+              caso 1
+                   escreval("==========================")
+                   escreval("NOME: ",n)
+                   escreval("NASCIMENTO: ",i)
+                   escreval("CONTRIBUICAO: ",ac," anos")
+                   escreval("SALARIO ATUAL: R$",s)
+                   escreval("CARGO: Vendedor")
+                   escreval("==========================")
+                   escreval("Insira a quantidade de vendas por produto: ")
+                   escreval("PLACA SOLAR: ")
+                   leia(p1)
+                   escreva("AR CONDICIONADO: ")
+                   leia(p2)
+                   escreva("KIT LAMPADA LED: ")
+                   leia(p3)
+                   limpatela
+                   vt<- (p1*1000)+(p2*500)+(p3*200)
+                   se vt>=20000 entao
+                           escreval("-------------------")
+                           escreval("STATUS: Meta Batida")
+                           escreval("ESPERADO: R$20.000")
+                           escreval("TOTAL: R$",vt)
+                           escreval("-------------------")
+                           escreval("ESCOLHA: ")
+                           escreval("DAR AUMENTO [S/N] ")
+                           leia(r)
+                           se r="s" entao
+                              escreval("PORCENTAGEM DE AUMENTO: ")
+                              escreval("[1] 5%  [2] 10%  [3] 20% :")
+                              leia(porc)
+                              limpatela
+                              escolha porc
+                                      caso 1
+                                           ns<- s*1.05
+                                      caso 2
+                                           ns<- s*1.1
+                                      caso 3
+                                           ns<- s*1.2
+                              fimescolha
+                           senao
+                                se r="n" entao
+                                   ns<- s
+                                   limpatela
+                                fimse
+                           fimse
+                     senao
+                           escreval("-------------------")
+                           escreval("STATUS: Insuficiente")
+                           escreval("ESPERADO: R$20.000")
+                           escreval("TOTAL: R$",vt)
+                           escreval("-------------------")
+                           escreval("ESCOLHA AS MEDIDAS POSSIVEIS: ")
+                           escreval("Diminuir salario [S/N]")
+                           leia(r)
+                           limpatela
+                           se r="s" entao
+                              escreval("PORCENTAGEM DE REDUCAO: ")
+                              escreval("[1] 5%  [2] 10% : ")
+                              leia(porc)
+                              limpatela
+                              escolha porc
+                                      caso 1
+                                           ns<- s*0.95
+                                      caso 2
+                                           ns<- s*0.9
+                              fimescolha
+                           senao
+                                se r="n" entao
+                                   ns<-s
+                                   limpatela
+                                fimse
+                           fimse
+                   fimse
+              caso 2
+                   escreval("==========================")
+                   escreval("NOME: ",n)
+                   escreval("NASCIMENTO: ",i)
+                   escreval("CONTRIBUICAO: ",ac," anos")
+                   escreval("SALARIO ATUAL: R$",s)
+                   escreval("CARGO: Estoquista")
+                   escreval("==========================")
+                   escreval("COLOQUE INFORMACOES DO ULTIMO MES")
+                   escreval("---------------------------------")
+                   escreva("Insira horas de trabalho (dia): ")
+                   leia(h)
+                   escreva("Insira dias trabalhados: ")
+                   leia(d)
+                   dh<-h*d
+                   limpatela
+                   se dh>=160 entao
+                      escreval("META ATINGIDA")
+                      escreval("-------------------")
+                      escreval("ESCOLHA: ")
+                      escreval("DAR AUMENTO [S/N] ")
+                      leia(r)
+                      se r="s" entao
+                         escreval("PORCENTAGEM DE AUMENTO: ")
+                         escreval("[1] 5%  [2] 10%  [3] 20% :")
+                         leia(porc)
+                         limpatela
+                         escolha porc
+                                 caso 1
+                                      ns<- s*1.05
+                                 caso 2
+                                      ns<- s*1.1
+                                 caso 3
+                                      ns<- s*1.2
+                         fimescolha
+                         senao
+                              se r="n" entao
+                                 ns<- s
+                                 limpatela
+                              fimse
+                         fimse
+                   senao
+                        escreval("meta NAO atingida")
+                        escreval("-------------------")
+                        escreval("ESCOLHA AS MEDIDAS POSSIVEIS: ")
+                        escreval("Diminuir salario [S/N]")
+                        leia(r)
+                        limpatela
+                        se r="s" entao
+                           escreval("PORCENTAGEM DE REDUCAO: ")
+                           escreval("[1] 5%  [2] 10% : ")
+                           leia(porc)
+                           limpatela
+                           escolha porc
+                                   caso 1
+                                        ns<- s*0.95
+                                   caso 2
+                                        ns<- s*0.9
+                           fimescolha
+                        senao
+                             se r="n" entao
+                                ns<-s
+                                limpatela
+                             fimse
+                        fimse
+                   fimse
+              caso 3
+                   escreval("==========================")
+                   escreval("NOME: ",n)
+                   escreval("NASCIMENTO: ",i)
+                   escreval("CONTRIBUICAO: ",ac," anos")
+                   escreval("SALARIO ATUAL: R$",s)
+                   escreval("CARGO: Fabrica")
+                   escreval("==========================")
+                   escreval("Informe a produtividade: ")
+                   escreva("PROJETOS CONCLUIDOS: ")
+                   leia(p1)
+                   limpatela
+                   se p1>=50 entao
+                      escreval("META ATINGIDA")
+                      escreval("-------------------")
+                      escreval("ESCOLHA: ")
+                      escreval("DAR AUMENTO [S/N] ")
+                      leia(r)
+                      se r="s" entao
+                         escreval("PORCENTAGEM DE AUMENTO: ")
+                         escreval("[1] 5%  [2] 10%  [3] 20% :")
+                         leia(porc)
+                         limpatela
+                         escolha porc
+                                 caso 1
+                                      ns<- s*1.05
+                                 caso 2
+                                      ns<- s*1.1
+                                 caso 3
+                                      ns<- s*1.2
+                         fimescolha
+                         senao
+                              se r="n" entao
+                                 ns<- s
+                                 limpatela
+                              fimse
+                         fimse
+                   senao
+                        escreval("meta NAO atingida")
+                        escreval("-------------------")
+                        escreval("ESCOLHA AS MEDIDAS POSSIVEIS: ")
+                        escreval("Diminuir salario [S/N]")
+                        leia(r)
+                        limpatela
+                        se r="s" entao
+                           escreval("PORCENTAGEM DE REDUCAO: ")
+                           escreval("[1] 5%  [2] 10% : ")
+                           leia(porc)
+                           limpatela
+                           escolha porc
+                                   caso 1
+                                        ns<- s*0.95
+                                   caso 2
+                                        ns<- s*0.9
+                           fimescolha
+                        senao
+                             se r="n" entao
+                                ns<-s
+                                limpatela
+                             fimse
+                        fimse
+                   fimse
+      fimescolha
+      escreval("SITUACAO FINAL: ")
+      escreval("Nome: ",n)
+      escreval("Ano de Nascimento: ",i)
+      escreval("Salario antigo: R$",s)
+      escreval("SALARIO ATUAL: R$",ns)
+      escreval("obs: o salario so tera mudanca caso o responsavel promova uma")
+      escreval("=============================================================")
+      escreval("DESEJA FINALIZAR O PROGRAMA [S/N]: ")
+      leia(rf)
+      ate rf="s"
+      limpatela
+fimalgoritmo
