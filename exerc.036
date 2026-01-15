@@ -1,0 +1,173 @@
+algoritmo "ex36"
+// Função : Jogo interativo de matematica
+// Autor : Nathan Cabral
+// Data : 15/01/2026
+var
+procedimento tit()
+inicio
+      escreval("==== TESTE  DE   MATEMATICA  BASICA ====")
+      escreval("========================================")
+fimprocedimento
+   n,ini,r1,r2,r3,r: caractere
+   niv,cert,i: inteiro
+inicio
+tit()
+            escreval("ESCOLHA: NIVEL DO ALUNO")
+            escreva("[1] A  [2] B  [3] C:")
+            leia(niv)
+            limpatela
+            tit()
+            escreva("NOME DO PARTICIPANTE: ")
+            leia(n)
+            escreva("IDADE: ")
+            leia(i)
+            escreva("Escreva (START) para iniciar: ")
+            leia(ini)
+            limpatela
+            se ini="START" entao
+               tit()
+               escolha niv
+                       cert<-0
+                       caso 1
+                            escreval("Questao 01. ")
+                            escreval("Descubra o valor de Y nessa funcao do 2 grau")
+                            escreval("DADOS: A=10  B=20  C=15  X=2")
+                            escreval("O valor de y e: ")
+                            escreval("a) 95")
+                            escreval("b) 100")
+                            escreval("c) 90")
+                            leia(r1)
+                            se r1="a" entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                            tit()
+                            escreval("Questao 02.")
+                            escreval("CALCULE O PRECO PARA COLOCAR O PISO EM UM APARTAMENTO")
+                            escreval("Os lados sao: L1=5cm  L2=20cm")
+                            escreval("A maqueta do ap esta na escala 1-100")
+                            escreval("Se, e cobrado R$20.00 para colocar 1m^2 de piso, entao")
+                            escreval("Quanto o comprador ira gastar: R$")
+                            escreval("a) R$ 3.000")
+                            escreval("b) R$ 2.000")
+                            escreval("c) R$ 1.500")
+                            leia(r2)
+                            se r2="b"entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                            tit()
+                            escreval("Questao 03.")
+                            escreval("Calcule o desconto")
+                            escreval("Se um aspirador de po custa R$500")
+                            escreval("E esta com um desconto de 25%")
+                            escreval("Qual e o valor final desse produto:")
+                            escreval("a) R$ 375")
+                            escreval("b) R$ 410")
+                            escreval("c) R$ 380")
+                            leia(r3)
+                            se r3="a" entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                       caso 2
+                            escreval("Questao 01.")
+                            escreval("Descubra o valor de y nessa funcao do 1 grau")
+                            escreval("DADOS: A=50  B=10  X=2")
+                            escreval("O valor de Y e: ")
+                            escreval("a) 100")
+                            escreval("b) 90")
+                            escreval("c) 110")
+                            leia(r1)
+                            se r1="c" entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                            tit()
+                            escreval("Questao 02. ")
+                            escreval("Calcule a area de um triangulo retangulo")
+                            escreval("DADOS: Base=40   Altura=200")
+                            escreval("A area desse triangulo e: ")
+                            escreval("a) 3500")
+                            escreval("b) 8000")
+                            escreval("c) 4000")
+                            leia(r2)
+                            se r2="c"entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                            tit()
+                            escreval("Questao 03.")
+                            escreval("Duzentos e trinta e oito milhoes cento e vinte e sete mil")
+                            escreval("Escreva esse numero em notacao cientifica: ")
+                            escreval("a) 2,38127*10^8")
+                            escreval("b) 2,38127*10^7")
+                            escreval("c) 2,38127*10^6")
+                            leia(r3)
+                            se r3="a"entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                       caso 3
+                            escreval("Questao 01.")
+                            escreval("15% de 40: ")
+                            escreval("a) 6")
+                            escreval("b) 25")
+                            escreval("c) 4")
+                            leia(r1)
+                            se r1="a" entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                            tit()
+                            escreval("Questao 02.")
+                            escreval("Fatorial de 4: ")
+                            escreval("a) 120")
+                            escreval("b) 8")
+                            escreval("c) 24")
+                            leia(r2)
+                            se r2="c" entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                            tit()
+                            escreval("Questao 03.")
+                            escreval("Calcule a area de um quadrado")
+                            escreval("DADOS: Lado=5")
+                            escreval("a) 10")
+                            escreval("b) 25")
+                            escreval("c) 10")
+                            leia(r3)
+                            se r3="b" entao
+                               cert<- cert+1
+                            fimse
+                            limpatela
+                            fimescolha
+                            tit()
+                            escreval("TESTE FINALIZADO!")
+                            escreval("RESUMO DE DESEMPENHO:")
+                            escreval("---------------------")
+                            escreval("NOME: ",n)
+                            escreval("IDADE: ",i)
+                       fimescolha
+                            se cert=3 entao
+                               escreval("DESEMPENHO: EXCELENTE")
+                                                     escreval("Parabens, voce acertou as 3 perguntas mais dificeis!")
+                            senao
+                                  se cert=2 entao
+                                     escreval("DESEMPENHO: BOM")
+                                     escreval("Parabens, voce errou apenas 1")
+                                  senao
+                                       se cert=1 entao
+                                          escreval("DESEMPENHO: RUIM")
+                                          escreval("Acertou apenas 1 :(")
+                                       senao
+                                            se cert=0 entao
+                                               escreval("DESEMPENHO: PESSIMO")
+                                               escreval("ERROU TODAS CARA???")
+                                            fimse
+                                       fimse
+                                  fimse
+                            fimse
+            fimse
+fimalgoritmo
